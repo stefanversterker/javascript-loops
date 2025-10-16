@@ -25,14 +25,14 @@ for (let i = 1; i < 6; i++) {
 // ==========================================
 
 
-const loop = "loop..."
-const klaar = "klaar!"
+const loop = "loop...";
+const klaar = "klaar!";
 
 for (let i = 1; i < 5; i++) {
-    console.log(loop)
+    console.log(loop);
 
     if (i === 4) {
-        console.log(klaar)
+        console.log(klaar);
     }
 }
 
@@ -53,7 +53,7 @@ for (let i = 1; i < 5; i++) {
 
 
 for (let i = 10001; i < 10009; i++) {
-    console.log('INV-' + i.toString().substring(1))
+    console.log('INV-' + i.toString().substring(1));
 }
 
 // ==========================================
@@ -78,11 +78,11 @@ for (let i = 10001; i < 10009; i++) {
 for (let i = 9; i < 19; i++) {
 
         if (i === 12) {
-            console.log(i + ':00 Lunchpauze!')
+            console.log(i + ':00 Lunchpauze!');
         } else if (i === 17) {
-            console.log(i + ':00 Bijna klaar...')
+            console.log(i + ':00 Bijna klaar...');
         } else {
-            console.log(i + ':00')
+            console.log(i + ':00');
         }
 }
 
@@ -106,11 +106,11 @@ for (let i = 9; i < 19; i++) {
 for (let i = 0; i < 10; i++)
 
     if (i > 2 && i < 6) {
-        console.log(`> ${i}`)
+        console.log(`> ${i}`);
     } else if (i > 5) {
-        console.log(`>> ${i}`)
+        console.log(`>> ${i}`);
     } else if (i < 3) {
-        console.log(i)
+        console.log(i);
     }
 
 
@@ -161,7 +161,7 @@ for (let i = 0; i < 101; i++) {
     } else if (i % 5 === 0) {
         console.log("Buzz");
     } else {
-        console.log(i)
+        console.log(i);
     }
 }
 
