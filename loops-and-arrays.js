@@ -13,11 +13,14 @@
 
 const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
 
+for (let i = 0; i < meetingTimes.length; i++) {
+    console.log(`Vergadering om ${meetingTimes[i]}`)
+}
 
 // ==========================================
 // Opdracht 2. In tegenstelling tot Bob, werken de andere medewerkers van Loop-it Solutions wél hard.
 // Alle medewerkers hebben daarom zojuist 5% salarisverhoging gekregen. Om te voorkomen dat Bob dit handmatig moet aanpassen,
-// schrijf jij een script voor hem dat alle salarissen in onderstaande array met 5% verhoogd.
+// schrijf jij een script voor hem dat alle salarissen in onderstaande array met 5% verhoogd. <====VERHOOGT, met een T!
 // Let op: hoewel we op dit moment slechts 5 medewerkers hebben, moet jouw script natuurlijk ook werken
 // als de array wel 100 of 200 salarissen zou bevatten!
 
@@ -26,6 +29,13 @@ const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
 // ==========================================
 
 const salaries = [3200, 2350, 2800, 3500, 2800];
+
+for (let i = 0; i < salaries.length; i++) {
+    salaries[i] = (salaries[i] * 1.05)
+}
+
+console.log(salaries);
+
 
 
 // ==========================================
@@ -38,6 +48,14 @@ const salaries = [3200, 2350, 2800, 3500, 2800];
 // ==========================================
 
 const birthYears = [1995, 1997, 1990, 2003, 1982];
+const currentYear = 2025;
+
+for (let i = 0; i < birthYears.length; i++) {
+    birthYears[i] = currentYear - birthYears[i]
+}
+console.log(birthYears)
+
+/*Het werkt, maar er staat nog een error op regel 52 die ik niet weg krijg.*/
 
 
 // ==========================================
@@ -51,6 +69,15 @@ const birthYears = [1995, 1997, 1990, 2003, 1982];
 // ==========================================
 
 const leaveHours = [6, 9, 2, 7, 3];
+
+for(let i = 0; i < leaveHours.length; i++) {
+    if(leaveHours[i] % 2 === 0) {
+        leaveHours[i] = leaveHours[i] * 2
+    } else {
+        leaveHours[i] = leaveHours[i] * 0.5
+    }
+}
+console.log(leaveHours)
 
 
 // ==========================================
@@ -68,5 +95,11 @@ const leaveHours = [6, 9, 2, 7, 3];
 // ==========================================
 
 const productionCodes = [" abC123  ", "  DEF456", "ghi789  ", "JKL012"];
+
+for(let i = 0; i < productionCodes.length; i++) {
+    productionCodes[i] = productionCodes[i].trim().toUpperCase()
+}
+
+console.log(productionCodes)
 
 
